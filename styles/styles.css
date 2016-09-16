@@ -1,0 +1,153 @@
+/**{
+  border:1px dashed red;
+}*/
+*{
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Muli', sans-serif;
+
+}
+
+header {
+  background: url("../images/bg1.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+a {
+  text-decoration: none;
+  color:white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+#intro {
+  position: absolute;
+  top: 10vh;
+  right:0;
+  left:0;
+text-shadow: 1px 1px 1px #000000;
+
+}
+.tagline{
+  font-size: 1.2rem;
+  color:white;
+  width:40vw;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.profile_pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+}
+.social ul {
+    padding: 0;
+    margin:0;
+    list-style: none;
+}
+
+.social ul li {
+    display: inline-block;
+    padding: 3px;
+}
+
+.social img {
+    width: 40px;
+    height: 40px;
+}
+
+/*Navigation*/
+
+.navbar {
+  position: absolute;
+  bottom: 3vh;
+  left: 0;
+  right: 0;
+font-size: 1.1rem;
+  padding: 0;
+}
+
+.navbar li {
+
+  display: inline-block;
+  padding: 0 1vw 0 1vw;
+}
+
+.navbar li a {
+  color:white;
+  font-weight: 590;
+  text-align: center;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.wrapper{
+  width:80vw;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.flex-grid {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-grid .col {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.flex-grid-thirds {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-grid-thirds .col {
+  width: 32%;
+}
+
+@media (max-width: 400px) {
+  .flex-grid,
+  .flex-grid-thirds {
+    display: block;
+  }
+  .flex-grid .col,
+  .flex-grid-thirds .col {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+}
+
+
+.flex-grid {
+  margin: 0 0 20px 0;
+}
+
+.col {
+  background: salmon;
+  padding: 20px;
+}
