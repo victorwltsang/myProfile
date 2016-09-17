@@ -1,49 +1,41 @@
 /**{
   border:1px dashed red;
 }*/
-*{
-  box-sizing: border-box;
+
+* {
+    box-sizing: border-box;
 }
 body {
-  font-family: 'Muli', sans-serif;
-
+    font-family: 'Muli', sans-serif;
 }
-
 header {
-  background: url("../images/bg1.jpg") no-repeat center center fixed;
-  background-size: cover;
-  height: 100vh;
-  position: relative;
-  text-align: center;
-  overflow: hidden;
+    background: url("../images/bg1.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
 }
-
-
 a {
-  text-decoration: none;
-  color:white;
+    text-decoration: none;
+    color: white;
 }
-
 ul {
-  list-style-type: none;
+    list-style-type: none;
 }
-
-
 #intro {
-  position: absolute;
-  top: 10vh;
-  right:0;
-  left:0;
-text-shadow: 1px 1px 1px #000000;
-
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    left: 0;
+    text-shadow: 1px 1px 1px #000000;
 }
-.tagline{
-  font-size: 1.2rem;
-  color:white;
-  width:40vw;
-  margin-left: auto;
-  margin-right: auto;
-
+.tagline {
+    font-size: 1.2rem;
+    color: white;
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 .profile_pic {
     border-radius: 50%;
@@ -54,15 +46,13 @@ text-shadow: 1px 1px 1px #000000;
 }
 .social ul {
     padding: 0;
-    margin:0;
+    margin: 0;
     list-style: none;
 }
-
 .social ul li {
     display: inline-block;
     padding: 3px;
 }
-
 .social img {
     width: 40px;
     height: 40px;
@@ -71,83 +61,106 @@ text-shadow: 1px 1px 1px #000000;
 /*Navigation*/
 
 .navbar {
-  position: absolute;
-  bottom: 3vh;
-  left: 0;
-  right: 0;
-font-size: 1.1rem;
-  padding: 0;
+    position: absolute;
+    bottom: 3vh;
+    left: 0;
+    right: 0;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    padding: 0;
 }
-
 .navbar li {
-
-  display: inline-block;
-  padding: 0 1vw 0 1vw;
+    display: inline-block;
+    padding: 0 1vw 0 1vw;
 }
-
 .navbar li a {
-  color:white;
-  font-weight: 590;
-  text-align: center;
+    color: white;
+    font-weight: 590;
+    text-align: center;
 }
-
 .navbar a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
+}
+.wrapper {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+}
+.headline {
+    text-align: center;
+    margin: 0;
+}
+.lead {
+    text-align: center;
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+}
+#projects {
+    background: url("../images/project-bg.png") repeat;
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
 }
 
-.wrapper{
-  width:80vw;
-  margin-left:auto;
-  margin-right:auto;
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.flex-grid {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+/* Add some padding inside the card container */
+.card-text {
+    padding: 2px 16px;
+    text-align: center;
 }
 
-.flex-grid .col {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
 
-.flex-grid-thirds {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
+.card img {
 
-.flex-grid-thirds .col {
-  width: 32%;
-}
-
-@media (max-width: 400px) {
-  .flex-grid,
-  .flex-grid-thirds {
-    display: block;
-  }
-  .flex-grid .col,
-  .flex-grid-thirds .col {
     width: 100%;
-    margin: 0 0 10px 0;
-  }
+    height: auto;
 }
-
-
 .flex-grid {
-  margin: 0 0 20px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
 }
-
+.flex-grid .col {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.flex-grid-thirds {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.flex-grid-thirds .col {
+    width: 32%;
+}
+@media (max-width: 400px) {
+    .flex-grid, .flex-grid-thirds {
+        display: block;
+    }
+    .flex-grid .col, .flex-grid-thirds .col {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+}
+.flex-grid {
+    margin: 0 0 20px 0;
+}
 .col {
-  background: salmon;
-  padding: 20px;
+
+    padding: 20px;
 }
